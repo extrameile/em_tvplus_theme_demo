@@ -1,0 +1,36 @@
+{
+    "name": "extrameile/em_tvplus_theme_demo",
+    "type": "typo3-cms-extension",
+    "description": "Demo Theme for TemplaVoilà! Plus",
+    "keywords": [
+        "TYPO3",
+        "extension",
+        "TemplaVoila",
+        "TemplaVoilaPlus",
+        "theme"
+    ],
+    "homepage": "https://templavoila.plus/",
+    "license": ["GPL-2.0+"],
+    "authors": [
+        {
+            "name": "Alexander Opitz",
+            "email": "opitz@extrameile-gehen.de",
+            "homepage": "http://www.extrameile-gehen.de",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^8.7.0 || ^9.5.0 || ^10.4.0",
+        "templavoilaplus/templavoilaplus": ">=8.0.0",
+        "php": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Extrameile\\EmTvplusThemeDemo\\": "Classes/"
+        }
+    },
+    "replace": {
+        "extrameile/em_tvplus_theme_demo": "self.version",
+        "typo3-ter/em_tvplus_theme_demo": "self.version"
+    }
+}

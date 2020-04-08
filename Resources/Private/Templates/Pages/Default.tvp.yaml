@@ -9,10 +9,10 @@ tvp-template:
             field_title:
                 xpath: h1
                 type: INNER
-            field_class:
+            field_layout:
                 xpath: h1
                 type: ATTRIB
                 attribName: class
-            field_text:
+            field_author:
                 xpath: div[1]/div[1]
                 type: OUTER

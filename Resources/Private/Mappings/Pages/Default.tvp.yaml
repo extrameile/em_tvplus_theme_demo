@@ -1,0 +1,15 @@
+tvp-mapping:
+    meta:
+        label: Default Demo Page
+    combinedTemplateConfigurationIdentifier: '283274d1-5281-4939-8dd4-e1e8c987d275:/Default.tvp.yaml'
+    dataStructureIdentifier:
+    mappingToTemplate:
+        field_title:
+            fieldName: title
+            fieldType: row
+        field_author:
+            fieldName: author
+            fieldType: row
+        field_layout:
+            fieldName: layout
+            fieldType: row

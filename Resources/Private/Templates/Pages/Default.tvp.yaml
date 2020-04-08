@@ -1,2 +1,11 @@
 tvp-template:
-    label: Default Demo Page
+    meta:
+        label: Default Demo Page
+        renderer: templavoilaplus_xpath
+    mapping:
+        xpath: body[1]
+        type: INNER
+        container:
+            field_title:
+                xpath: h1
+                type: OUTER

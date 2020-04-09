@@ -1,0 +1,16 @@
+# THIS is only for fast demonstration here you should use other points for your TypoScript
+# Seeh ttps://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/ExtensionArchitecture/FilesAndLocations/Index.html#ext-typoscript-constants-typoscript
+
+lib.textmenu = HMENU
+lib.textmenu {
+  1 = TMENU
+  1.wrap = <ul> | </ul>
+  1.NO.wrapItemAndSub = <li> | </li>
+  1.expAll = 1
+  2 < .1
+  3 < .2
+  4 < .3
+  5 < .4
+  6 < .5
+  7 < .6
+}

@@ -6,6 +6,9 @@ tvp-template:
         xpath: body[1]
         type: OUTER
         container:
+            field_menu:
+                xpath: nav
+                type: INNERCHILD
             field_title:
                 xpath: h1
                 type: INNER

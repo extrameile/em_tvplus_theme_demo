@@ -13,3 +13,6 @@ tvp-mapping:
         field_layout:
             fieldName: layout
             fieldType: row
+        field_menu:
+            fieldName: lib.textmenu
+            fieldType: typoscriptObjectPath

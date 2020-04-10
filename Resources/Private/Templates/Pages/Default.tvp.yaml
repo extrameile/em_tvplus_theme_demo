@@ -11,7 +11,9 @@ tvp-template:
         container:
             field_logo:
                 xpath: "//*[@id='logo']" #Example usage of a complex XPath but, bear in mind this variant is slow!
-                type: INNERCHILD
+                type: INNERCHILD # This naming seams wrong, but it allows you to add the content of field_logo as
+                                 # DomNodes to the process otherwise it will be a TEXTNode and so will be outputted
+                                 # formated a.k.a. htmlspecialchared
             field_menu:
                 xpath: header/nav
                 type: INNERCHILD
@@ -27,4 +29,4 @@ tvp-template:
                 type: INNER
             field_copyright:
                 xpath: footer/p
-                type: INNER
+                type: INNERCHILD

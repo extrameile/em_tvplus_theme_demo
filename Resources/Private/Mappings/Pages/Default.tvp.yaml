@@ -68,7 +68,7 @@ tvp-mapping:
                 10 {
                     data = date : U
                     strftime = %Y
-                    noTrimWrap = |&copy; | |
+                    noTrimWrap = |&copy; TV+ Website | |
                 }
 
 

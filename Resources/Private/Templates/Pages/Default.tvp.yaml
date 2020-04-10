@@ -31,8 +31,8 @@ tvp-template:
                 type: ATTRIB
                 attribName: class
             field_author:
-                xpath: footer/address/a
+                xpath: footer/div/p/span
                 type: INNER
             field_copyright:
-                xpath: footer/p
+                xpath: footer/div/p
                 type: INNERCHILD

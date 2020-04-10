@@ -25,3 +25,6 @@ tvp-template:
             field_author:
                 xpath: footer/address/a
                 type: INNER
+            field_copyright:
+                xpath: footer/p
+                type: INNER

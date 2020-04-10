@@ -5,17 +5,35 @@ tvp-mapping:
     dataStructureIdentifier:
     mappingToTemplate:
         field_logo:
-            fieldName: media
-            fieldType: row
+            value: '' #This is default and do not need to be set
+            dataType: row
+            dataPath: media
+            valueProcessing: typoScript
+            valueProcessing.typoScript: ''
         field_title:
-            fieldName: title
-            fieldType: row
+            dataType: row
+            dataPath: title
+            valueProcessing: stdWrap
+            valueProcessing.stdWrap: ''
         field_author:
-            fieldName: author
-            fieldType: row
+            dataType: row
+            dataPath: author
+            valueProcessing: none #This is default and do not need to be set
         field_layout:
-            fieldName: layout
-            fieldType: row
+            dataType: row
+            dataPath: layout
         field_menu:
-            fieldName: lib.textmenu
-            fieldType: typoscriptObjectPath
+            dataType: typoscriptObjectPath
+            dataPath: lib.textmenu
+        field_copyright:
+            valueProcessing: typoScript
+            # YAML Multiline See: https://yaml-multiline.info/
+            valueProcessing.typoScript: |
+                10 = TEXT
+                10 {
+                    data = date : U
+                    strftime = %Y
+                    noTrimWrap = |&copy; | |
+                }
+
+

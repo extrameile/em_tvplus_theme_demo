@@ -2,6 +2,12 @@ tvp-template:
     meta:
         label: Default Demo Page
         renderer: templavoilaplus_xpath
+    header:
+        css:
+            bootstrap:
+                href: EXT:em_tvplus_theme_demo/Resources/Public/Css/bootstrap.css
+                rel: stylesheet
+                media: all
     mapping:
         # This is a demonstration what works and I hope it is a bit self explaining
         # Till yet this isn't set in stone and may change in naming and working
@@ -15,7 +21,7 @@ tvp-template:
                                  # DomNodes to the process otherwise it will be a TEXTNode and so will be outputted
                                  # formated a.k.a. htmlspecialchared
             field_menu:
-                xpath: header/nav
+                xpath: header/nav/div
                 type: INNERCHILD
             field_title:
                 xpath: main/h1

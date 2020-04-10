@@ -3,19 +3,25 @@ tvp-template:
         label: Default Demo Page
         renderer: templavoilaplus_xpath
     mapping:
+        # This is a demonstration what works and I hope it is a bit self explaining
+        # Till yet this isn't set in stone and may change in naming and working
+        # For example OUTER/INNER/ATTRIB are old names but a bit hard to understand
         xpath: body[1]
         type: OUTER
         container:
+            field_logo:
+                xpath: "//*[@id='logo']" #Example usage of a complex XPath but, bear in mind this variant is slow!
+                type: INNERCHILD
             field_menu:
-                xpath: nav
+                xpath: header/nav
                 type: INNERCHILD
             field_title:
-                xpath: h1
+                xpath: main/h1
                 type: INNER
             field_layout:
-                xpath: h1
+                xpath: main/h1
                 type: ATTRIB
                 attribName: class
             field_author:
-                xpath: div[1]/div[1]
-                type: OUTER
+                xpath: footer/address/a
+                type: INNER

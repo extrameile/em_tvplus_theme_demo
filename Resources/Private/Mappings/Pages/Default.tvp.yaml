@@ -9,7 +9,42 @@ tvp-mapping:
             dataType: row
             dataPath: media
             valueProcessing: typoScript
-            valueProcessing.typoScript: ''
+            valueProcessing.typoScript: |
+                10 = FILES
+                10 {
+                    references {
+                        table = pages
+                        uid.cObject = COA
+                        uid.cObject {
+                            10 = TEXT
+                            10 {
+                                data = page:uid
+                                if.isTrue.data = page:_LOCALIZED_UID
+                                if.negate = 1
+                            }
+
+                            20 = TEXT
+                            20 {
+                                data = page:_LOCALIZED_UID
+                                if.isTrue.data = page:_LOCALIZED_UID
+                            }
+                        }
+                        fieldName = media
+                    }
+
+                    renderObj = COA
+                    renderObj {
+                        10 = IMAGE
+                        10 {
+                            file {
+                                treatIdAsReference = 1
+                                import.data = file:current:uid
+                            }
+                            altText.data = file:current:alternative
+                            titleText.data = file:current:title
+                        }
+                    }
+                }
         field_title:
             dataType: row
             dataPath: title

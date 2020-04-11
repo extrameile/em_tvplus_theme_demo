@@ -43,6 +43,7 @@ tvp-mapping:
                             }
                             altText.data = file:current:alternative
                             titleText.data = file:current:title
+                            params = class="img-fluid"
                         }
                     }
                 }

@@ -32,14 +32,14 @@ tvp-template:
                 xpath: header/nav/div
                 type: INNERCHILD
             field_title:
-                xpath: main/h1
+                xpath: main/section/div/h1
                 type: INNER
             field_layout:
-                xpath: main/h1
+                xpath: main/section/div/h1
                 type: ATTRIB
                 attribName: class
             field_content:
-                xpath: section
+                xpath: main/section[3]
                 type: INNERCHILD
             field_author:
                 xpath: footer/div/p/span

@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <T3DataStructure>
     <meta type="array">
-        <langChildren type="integer">1</langChildren>
-        <langDisable type="integer">0</langDisable>
         <title>Default Page</title>
         <description>Place a description here</description>
     </meta>

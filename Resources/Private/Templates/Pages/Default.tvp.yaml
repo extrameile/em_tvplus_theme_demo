@@ -8,6 +8,11 @@ tvp-template:
                 href: EXT:em_tvplus_theme_demo/Resources/Public/Css/bootstrap.css
                 rel: stylesheet
                 media: all
+        javascript:
+            jquery:
+                src: EXT:em_tvplus_theme_demo/Resources/Public/Javascript/jquery.js
+            bootstrap:
+                src: EXT:em_tvplus_theme_demo/Resources/Public/Javascript/bootstrap.js
     mapping:
         # This is a demonstration what works and I hope it is a bit self explaining
         # Till yet this isn't set in stone and may change in naming and working

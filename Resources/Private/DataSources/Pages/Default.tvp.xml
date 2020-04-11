@@ -14,11 +14,6 @@
                             <numIndex index="0"></numIndex>
                     </sample_data>
                     <eType>ce</eType>
-                    <proc type="array">
-                        <int>0</int>
-                        <HSC>0</HSC>
-                        <stdWrap></stdWrap>
-                    </proc>
                     <preview></preview>
                     <oldStyleColumnNumber>0</oldStyleColumnNumber>
                     <enableDragDrop>1</enableDragDrop>

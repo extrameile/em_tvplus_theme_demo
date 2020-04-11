@@ -38,6 +38,9 @@ tvp-template:
                 xpath: main/h1
                 type: ATTRIB
                 attribName: class
+            field_content:
+                xpath: section
+                type: INNERCHILD
             field_author:
                 xpath: footer/div/p/span
                 type: INNER

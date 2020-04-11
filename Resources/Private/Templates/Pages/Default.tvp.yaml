@@ -3,6 +3,9 @@ tvp-template:
         label: Default Demo Page
         renderer: templavoilaplus_xpath
     header:
+        meta:
+            description:
+                content: The description
         css:
             bootstrap:
                 href: EXT:em_tvplus_theme_demo/Resources/Public/Css/bootstrap.css

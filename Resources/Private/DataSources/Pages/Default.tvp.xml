@@ -10,7 +10,6 @@
             <field_content type="array">
                 <tx_templavoila type="array">
                     <title>Content</title>
-                    <oldStyleColumnNumber>0</oldStyleColumnNumber>
                 </tx_templavoila>
                 <TCEforms type="array">
                     <label>Content</label>

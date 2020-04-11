@@ -10,7 +10,7 @@ tvp-mapping:
             dataType: row
             dataPath: media
             valueProcessing: typoScript
-            valueProcessing.typoScript: |
+            valueProcessing.typoScript: | # YAML Multiline See: https://yaml-multiline.info/
                 10 = FILES
                 10 {
                     references {
@@ -58,12 +58,20 @@ tvp-mapping:
         field_layout:
             dataType: row
             dataPath: layout
+        field_content:
+            dataType: flexform
+            dataPath: field_content
+            valueProcessing: typoScript
+            valueProcessing.typoScript: |
+                10 = RECORDS
+                10.source.current=1
+                10.tables = tt_content
+                10.wrap = <!--TYPO3SEARCH_begin--> | <!--TYPO3SEARCH_end-->
         field_menu:
             dataType: typoscriptObjectPath
             dataPath: lib.textmenu
         field_copyright:
             valueProcessing: typoScript
-            # YAML Multiline See: https://yaml-multiline.info/
             valueProcessing.typoScript: |
                 10 = TEXT
                 10 {
@@ -71,5 +79,3 @@ tvp-mapping:
                     strftime = %Y
                     noTrimWrap = |&copy; TV+ Website | |
                 }
-
-

@@ -8,9 +8,6 @@
         <type>array</type>
         <el type="array">
             <field_content type="array">
-                <tx_templavoila type="array">
-                    <title>Content</title>
-                </tx_templavoila>
                 <TCEforms type="array">
                     <label>Content</label>
                     <config type="array">

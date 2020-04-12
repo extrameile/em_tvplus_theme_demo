@@ -1,6 +1,13 @@
 # THIS is only for fast demonstration here you should use other points for your TypoScript
 # Seeh ttps://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/ExtensionArchitecture/FilesAndLocations/Index.html#ext-typoscript-constants-typoscript
 
+page = PAGE
+page {
+    typeNum = 0
+    10 = USER
+    10.userFunc = Ppi\TemplaVoilaPlus\Controller\Frontend\FrontendController->renderPage
+}
+
 lib.textmenu = HMENU
 lib.textmenu {
   1 = TMENU

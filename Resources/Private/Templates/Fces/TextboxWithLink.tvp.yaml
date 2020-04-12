@@ -1,0 +1,24 @@
+tvp-template:
+    meta:
+        label: Textbox with link
+        renderer: templavoilaplus_xpath
+    mapping:
+        # This is a demonstration what works and I hope it is a bit self explaining
+        # Till yet this isn't set in stone and may change in naming and working
+        # For example OUTER/INNER/ATTRIB are old names but a bit hard to understand
+        xpath: body/main/section[3]
+        type: INNER
+        container:
+            field_headline:
+                xpath: div[1]/h2
+                type: INNER
+            field_copy:
+                xpath: div[2]/p
+                type: OUTERCHILD
+            field_link_url:
+                xpath: div[3]/a
+                type: ATTRIB
+                attribName: href
+            field_link_text:
+                xpath: div[3]/a
+                type: INNERCHILD

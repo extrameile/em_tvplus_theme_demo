@@ -40,7 +40,7 @@ tvp-template:
                 attribName: class
             field_content:
                 xpath: main/section[3]
-                type: INNERCHILD
+                type: OUTERCHILD
             field_author:
                 xpath: footer/div/p/span
                 type: INNER

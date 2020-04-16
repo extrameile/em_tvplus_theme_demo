@@ -2,6 +2,7 @@ tvp-template:
     meta:
         label: Textbox with link
         renderer: 'TVP\Renderer\XPath'
+        template: '../Files/PageWithContent.html'
     mapping:
         # This is a demonstration what works and I hope it is a bit self explaining
         # Till yet this isn't set in stone and may change in naming and working

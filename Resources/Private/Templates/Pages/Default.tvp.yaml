@@ -2,6 +2,7 @@ tvp-template:
     meta:
         label: Default Demo Page
         renderer: 'TVP\Renderer\XPath'
+        template: '../Files/PageWithContent.html'
     header:
         meta:
             description:

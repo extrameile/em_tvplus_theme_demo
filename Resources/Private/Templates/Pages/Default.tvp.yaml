@@ -1,7 +1,7 @@
 tvp-template:
     meta:
         label: Default Demo Page
-        renderer: templavoilaplus_xpath
+        renderer: 'TVP\Renderer\XPath'
     header:
         meta:
             description:

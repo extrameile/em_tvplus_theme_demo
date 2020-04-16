@@ -1,8 +1,8 @@
 tvp-mapping:
     meta:
         label: Default Demo Page
-    combinedDataStructureIdentifier: 'a4bf3bce-7e55-4a38-9afd-172c008301cb:/Default.tvp.xml'
-    combinedTemplateConfigurationIdentifier: '283274d1-5281-4939-8dd4-e1e8c987d275:/Default.tvp.yaml'
+    combinedDataStructureIdentifier: 'EM\TVP\Theme\Demo\Page\DataStructure:Default.tvp.xml'
+    combinedTemplateConfigurationIdentifier: 'EM\TVP\Theme\Demo\Page\Template:Default.tvp.yaml'
     mappingToTemplate:
         field_logo:
             value: '' #This is default and do not need to be set

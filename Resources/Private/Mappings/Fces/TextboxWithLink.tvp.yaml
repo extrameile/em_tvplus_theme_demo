@@ -1,8 +1,8 @@
 tvp-mapping:
     meta:
         label: Textbox with link
-    combinedDataStructureIdentifier: '8fb24d79-7f77-4390-92ee-dad7340bf7e5:/TextboxWithLink.tvp.xml'
-    combinedTemplateConfigurationIdentifier: '49da302f-e70c-4836-a40b-67c32d1b089e:/TextboxWithLink.tvp.yaml'
+    combinedDataStructureIdentifier: 'EM\TVP\Theme\Demo\Fce\DataStructure:TextboxWithLink.tvp.xml'
+    combinedTemplateConfigurationIdentifier: 'EM\TVP\Theme\Demo\Fce\Template:TextboxWithLink.tvp.yaml'
     mappingToTemplate:
         field_headline:
             dataType: flexform

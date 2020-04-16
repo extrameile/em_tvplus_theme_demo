@@ -1,7 +1,7 @@
 tvp-template:
     meta:
         label: Textbox with link
-        renderer: templavoilaplus_xpath
+        renderer: 'TVP\Renderer\XPath'
     mapping:
         # This is a demonstration what works and I hope it is a bit self explaining
         # Till yet this isn't set in stone and may change in naming and working

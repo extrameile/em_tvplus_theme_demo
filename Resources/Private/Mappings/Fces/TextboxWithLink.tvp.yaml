@@ -1,6 +1,6 @@
 tvp-mapping:
     meta:
-        label: Textbox with link
+        name: Textbox with link
     combinedDataStructureIdentifier: 'EM\TVP\Theme\Demo\Fce\DataStructure:TextboxWithLink.tvp.xml'
     combinedTemplateConfigurationIdentifier: 'EM\TVP\Theme\Demo\Fce\Template:TextboxWithLink.tvp.yaml'
     mappingToTemplate:

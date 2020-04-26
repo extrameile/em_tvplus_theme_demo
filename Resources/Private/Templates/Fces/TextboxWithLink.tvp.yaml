@@ -1,6 +1,6 @@
 tvp-template:
     meta:
-        label: Textbox with link
+        name: Textbox with link
         renderer: 'TVP\Renderer\XPath'
         template: '../Files/PageWithContent.html'
     mapping:

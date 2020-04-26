@@ -1,6 +1,6 @@
 tvp-mapping:
     meta:
-        label: Default Demo Page
+        name: Default Demo Page
     combinedDataStructureIdentifier: 'EM\TVP\Theme\Demo\Page\DataStructure:Default.tvp.xml'
     combinedTemplateConfigurationIdentifier: 'EM\TVP\Theme\Demo\Page\Template:Default.tvp.yaml'
     mappingToTemplate:

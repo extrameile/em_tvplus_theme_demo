@@ -1,6 +1,6 @@
 tvp-template:
     meta:
-        label: Default Demo Page
+        name: Default Demo Page
         renderer: 'TVP\Renderer\XPath'
         template: '../Files/PageWithContent.html'
     header:

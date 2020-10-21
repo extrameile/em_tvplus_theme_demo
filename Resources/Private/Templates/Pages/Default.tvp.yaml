@@ -22,14 +22,17 @@ tvp-template:
         # Till yet this isn't set in stone and may change in naming and working
         # For example OUTER/INNER/ATTRIB are old names but a bit hard to understand
         xpath: body[1]
-        mappingType: outer
+        mappingType: outer # This shouldn't be readed as mappingType, as it doesn't map something, this should more read
+                           # as "Take the matched element into account or only its childs", so this needs a naming fix
+                           # renderType?
         container:
             field_logo:
-                xpath: "//*[@id='logo']" #Example usage of a complex XPath but, bear in mind this variant is slow!
-                mappingType: inner # This naming seams wrong, but it allows you to add the content of field_logo as
-                                 # DomNodes to the process otherwise it will be a TEXTNode and so will be outputted
-                                 # formated a.k.a. htmlspecialchared
-                valueType: html
+                xpath: "//*[@id='logo']" # Example usage of a complex XPath but, bear in mind this variant is slow!
+                                         # Normally you shouldn't use the "//" global path.
+                mappingType: inner
+                valueType: html # Defines if the content from the value should be represented as plain string
+                                # and added as TEXTNode or handle as HTMLNodes to be added to the DOM tree.
+                                # a.k.a. HtmlSpecialChar
             field_menu:
                 xpath: header/nav/div
                 mappingType: inner

@@ -10,7 +10,7 @@ $EM_CONF[$_EXTKEY] = [
     'clearcacheonload' => 1,
     'constraints' => [
         'depends' => [
-            'templavoilaplus' => '8.0.0-alpha.2',
+            'templavoilaplus' => '8.0.0-alpha.4',
         ],
     ],
 ];

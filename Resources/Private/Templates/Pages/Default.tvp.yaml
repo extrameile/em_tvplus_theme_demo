@@ -22,29 +22,35 @@ tvp-template:
         # Till yet this isn't set in stone and may change in naming and working
         # For example OUTER/INNER/ATTRIB are old names but a bit hard to understand
         xpath: body[1]
-        type: OUTER
+        mappingType: outer
         container:
             field_logo:
                 xpath: "//*[@id='logo']" #Example usage of a complex XPath but, bear in mind this variant is slow!
-                type: INNERCHILD # This naming seams wrong, but it allows you to add the content of field_logo as
+                mappingType: inner # This naming seams wrong, but it allows you to add the content of field_logo as
                                  # DomNodes to the process otherwise it will be a TEXTNode and so will be outputted
                                  # formated a.k.a. htmlspecialchared
+                valueType: html
             field_menu:
                 xpath: header/nav/div
-                type: INNERCHILD
+                mappingType: inner
+                valueType: html
             field_title:
                 xpath: main/section/div/h1
-                type: INNER
+                mappingType: inner
+                valueType: plain
             field_layout:
                 xpath: main/section/div/h1
-                type: ATTRIB
+                mappingType: attrib
                 attribName: class
             field_content:
                 xpath: main/section[3]
-                type: OUTERCHILD
+                mappingType: outer
+                valueType: html
             field_author:
                 xpath: footer/div/p/span
-                type: INNER
+                mappingType: inner
+                valueType: plain
             field_copyright:
                 xpath: footer/div/p
-                type: INNERCHILD
+                mappingType: inner
+                valueType: html

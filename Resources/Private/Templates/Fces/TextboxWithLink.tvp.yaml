@@ -8,18 +8,21 @@ tvp-template:
         # Till yet this isn't set in stone and may change in naming and working
         # For example OUTER/INNER/ATTRIB are old names but a bit hard to understand
         xpath: body/main/section[3]
-        type: INNER
+        mappingType: outer
         container:
             field_headline:
                 xpath: div[1]/h2
-                type: INNER
+                mappingType: inner
+                valueType: plain
             field_copy:
                 xpath: div[2]/p
-                type: OUTERCHILD
+                mappingType: outer
+                valueType: html
             field_link_url:
                 xpath: div[3]/a
-                type: ATTRIB
+                mappingType: attrib
                 attribName: href
             field_link_text:
                 xpath: div[3]/a
-                type: INNERCHILD
+                mappingType: inner
+                valueType: html

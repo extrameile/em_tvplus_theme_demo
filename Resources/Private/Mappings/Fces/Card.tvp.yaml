@@ -1,0 +1,28 @@
+tvp-mapping:
+    meta:
+        name: Bootstrap Card
+    combinedDataStructureIdentifier: 'EM\TVP\Theme\Demo\Fce\DataStructure:Card.tvp.xml'
+    combinedTemplateConfigurationIdentifier: 'EM\TVP\Theme\Demo\Fce\Template:Card.tvp.yaml'
+    mappingToTemplate:
+        field_headline:
+            dataType: flexform
+            dataPath: field_headline
+        field_copy:
+            dataType: flexform
+            dataPath: field_copy
+            valueProcessing: typoScript
+            valueProcessing.typoScript: |
+                10 = TEXT
+                10.current = 1
+                10.parseFunc = < lib.parseFunc_RTE
+        field_link_url:
+            dataType: flexform
+            dataPath: field_link_url
+            valueProcessing: typoScript
+            valueProcessing.typoScript: |
+                10 = TEXT
+                10.typolink.parameter.current = 1
+                10.typolink.returnLast = url
+        field_link_text:
+            dataType: flexform
+            dataPath: field_link_text

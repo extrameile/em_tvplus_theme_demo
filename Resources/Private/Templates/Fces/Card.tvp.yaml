@@ -26,3 +26,7 @@ tvp-template:
                 xpath: div[1]/a
                 mappingType: inner
                 valueType: html
+            field_image:
+                xpath: img
+                mappingType: outer
+                valueType: html

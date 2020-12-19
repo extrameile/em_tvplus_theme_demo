@@ -26,3 +26,11 @@ tvp-mapping:
         field_link_text:
             dataType: flexform
             dataPath: field_link_text
+        field_image:
+            dataType: flexform
+            dataPath: field_image
+            valueProcessing: typoScript
+            valueProcessing.typoScript: |
+                10 = IMAGE
+                10.file.import.current = 1
+                10.file.import.listNum = 0

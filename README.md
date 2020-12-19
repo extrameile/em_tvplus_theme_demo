@@ -1,7 +1,7 @@
 # em_tvplus_theme_demo
 ## Demo Theme for TYPO3 TemplaVoilà! Plus v8+
 
-**Demonstration the template state as of 11.04.2020**
+**Demonstration the template state as of 19.12.2020**
 It shows:
 * The subpages as menu
 * The first media element of the page as logo

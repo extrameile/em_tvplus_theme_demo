@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <T3DataStructure>
     <meta type="array">
-        <title>Bootstrap Card</title>
+        <title>Textbox with Link</title>
         <description>Your description goes here</description>
     </meta>
     <ROOT type="array">

@@ -1,6 +1,6 @@
 tvp-template:
     meta:
-        name: Textbox with link
+        name: Bootstrap Card
         renderer: 'TVP\Renderer\XPath'
         template: '../Files/PageWithContent.html'
     mapping:

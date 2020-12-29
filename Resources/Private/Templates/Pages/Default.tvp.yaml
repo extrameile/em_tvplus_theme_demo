@@ -13,8 +13,6 @@ tvp-template:
                 rel: stylesheet
                 media: all
         javascript:
-            jquery:
-                src: EXT:em_tvplus_theme_demo/Resources/Public/Javascript/jquery.js
             bootstrap:
                 src: EXT:em_tvplus_theme_demo/Resources/Public/Javascript/bootstrap.js
     mapping:

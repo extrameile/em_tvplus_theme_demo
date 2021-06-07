@@ -1,0 +1,91 @@
+tvp-mapping:
+    meta:
+        name: Two column Demo Page
+    combinedDataStructureIdentifier: 'EM\TVP\Theme\Demo\Page\DataStructure:TwoColumn.tvp.xml'
+    combinedTemplateConfigurationIdentifier: 'EM\TVP\Theme\Demo\Page\Template:TwoColumn.tvp.yaml'
+    mappingToTemplate:
+        field_logo:
+            value: '' #This is default and do not need to be set
+            dataType: row
+            dataPath: media
+            valueProcessing: typoScript
+            valueProcessing.typoScript: | # YAML Multiline See: https://yaml-multiline.info/
+                10 = FILES
+                10 {
+                    references {
+                        table = pages
+                        uid.cObject = COA
+                        uid.cObject {
+                            10 = TEXT
+                            10 {
+                                data = page:uid
+                                if.isTrue.data = page:_LOCALIZED_UID
+                                if.negate = 1
+                            }
+
+                            20 = TEXT
+                            20 {
+                                data = page:_LOCALIZED_UID
+                                if.isTrue.data = page:_LOCALIZED_UID
+                            }
+                        }
+                        fieldName = media
+                    }
+
+                    renderObj = COA
+                    renderObj {
+                        10 = IMAGE
+                        10 {
+                            file {
+                                treatIdAsReference = 1
+                                import.data = file:current:uid
+                            }
+                            altText.data = file:current:alternative
+                            titleText.data = file:current:title
+                            params = class="img-fluid"
+                        }
+                    }
+                }
+        field_title:
+            dataType: row
+            dataPath: title
+            valueProcessing: stdWrap
+            valueProcessing.stdWrap: ''
+        field_author:
+            dataType: row
+            dataPath: author
+            valueProcessing: none #This is default and do not need to be set
+        field_layout:
+            dataType: row
+            dataPath: layout
+        field_content_col1:
+            dataType: flexform
+            dataPath: field_content_col1
+            valueProcessing: typoScript
+            valueProcessing.typoScript: |
+                10 = RECORDS
+                10.source.current = 1
+                10.tables = tt_content
+                10.wrap = <!--TYPO3SEARCH_begin--> | <!--TYPO3SEARCH_end-->
+        field_content_col2:
+            dataType: flexform
+            dataPath: field_content_col2
+            valueProcessing: typoScript
+            valueProcessing.typoScript: |
+                10 = RECORDS
+                10.source.current = 1
+                10.tables = tt_content
+                10.wrap = <!--TYPO3SEARCH_begin--> | <!--TYPO3SEARCH_end-->
+        field_menu:
+            dataType: typoscriptObjectPath
+            dataPath: lib.textmenu
+        field_copyright:
+            valueProcessing: typoScript
+            valueProcessing.typoScript: |
+                10 = TEXT
+                10 {
+                    data = date : U
+                    strftime = %Y
+                    noTrimWrap = |&copy; TV+ Website | |
+                }
+

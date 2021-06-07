@@ -1,0 +1,65 @@
+tvp-template:
+    meta:
+        name: Default Demo Page
+        renderer: 'TVP\Renderer\XPath'
+        template: '../Files/PageWithContent.html'
+    header:
+        meta:
+            description:
+                content: The description
+        css:
+            bootstrap:
+                href: EXT:em_tvplus_theme_demo/Resources/Public/Css/bootstrap.css
+                rel: stylesheet
+                media: all
+        javascript:
+            bootstrap:
+                src: EXT:em_tvplus_theme_demo/Resources/Public/Javascript/bootstrap.js
+    mapping:
+        # This is a demonstration what works and I hope it is a bit self explaining
+        # Till yet this isn't set in stone and may change in naming and working
+        # For example OUTER/INNER/ATTRIB are old names but a bit hard to understand
+        xpath: body[1]
+        mappingType: outer # This shouldn't be readed as mappingType, as it doesn't map something, this should more read
+                           # as "Take the matched element into account or only its childs", so this needs a naming fix
+                           # renderType?
+        container:
+            field_logo:
+                xpath: "//*[@id='logo']" # Example usage of a complex XPath but, bear in mind this variant is slow!
+                                         # Normally you shouldn't use the "//" global path.
+                mappingType: inner
+                valueType: html # Defines if the content from the value should be represented as plain string
+                                # and added as TEXTNode or handle as HTMLNodes to be added to the DOM tree.
+                                # a.k.a. HtmlSpecialChar
+            field_menu:
+                xpath: header/nav/div
+                mappingType: inner
+                valueType: html
+            field_title:
+                xpath: main/section/div/h1
+                mappingType: inner
+                valueType: plain
+            field_layout:
+                xpath: main/section/div/h1
+                mappingType: attrib
+                attribName: class
+            field_content_col1:
+                xpath: main/section[3]
+                mappingType: outer
+                valueType: html
+            field_content_col2:
+                xpath: main/section[3]
+                mappingType: outer
+                valueType: html
+            field_nothing1:
+                xpath: main/section[4]
+                mappingType: outer
+                valueType: html
+            field_author:
+                xpath: footer/div/p/span
+                mappingType: inner
+                valueType: plain
+            field_copyright:
+                xpath: footer/div/p
+                mappingType: inner
+                valueType: html

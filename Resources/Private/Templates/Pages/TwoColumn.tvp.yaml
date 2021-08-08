@@ -2,7 +2,7 @@ tvp-template:
     meta:
         name: Default Demo Page
         renderer: 'TVP\Renderer\XPath'
-        template: '../Files/PageWithContent.html'
+        template: '../Files/PageWithTwoColumns.html'
     header:
         meta:
             description:
@@ -44,16 +44,12 @@ tvp-template:
                 mappingType: attrib
                 attribName: class
             field_content_col1:
-                xpath: main/section[3]
-                mappingType: outer
+                xpath: main/section[3]/div/div[1]
+                mappingType: inner
                 valueType: html
             field_content_col2:
-                xpath: main/section[3]
-                mappingType: outer
-                valueType: html
-            field_nothing1:
-                xpath: main/section[4]
-                mappingType: outer
+                xpath: main/section[3]/div/div[2]
+                mappingType: inner
                 valueType: html
             field_author:
                 xpath: footer/div/p/span

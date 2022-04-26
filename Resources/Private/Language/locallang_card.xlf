@@ -21,6 +21,9 @@
             <trans-unit id="card.image" xml:space="preserve">
                 <source>Image</source>
             </trans-unit>
+            <trans-unit id="card.footer" xml:space="preserve">
+                <source>Card Footer</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

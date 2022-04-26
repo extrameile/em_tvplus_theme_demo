@@ -36,3 +36,8 @@ tvp-template:
                 xpath: img
                 mappingType: outer
                 valueType: html
+            field_footer:
+                xpath: div[3]
+                mappingType: inner
+                valueType: plain
+                removeIfEmpty: 1

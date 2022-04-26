@@ -37,3 +37,6 @@ tvp-mapping:
                 10 = IMAGE
                 10.file.import.current = 1
                 10.file.import.listNum = 0
+        field_footer:
+            dataType: flexform
+            dataPath: field_footer

@@ -11,19 +11,24 @@ tvp-template:
         mappingType: outer
         container:
             field_headline:
-                xpath: div[1]/h5
+                xpath: div[1]
+                mappingType: inner
+                valueType: plain
+                removeIfEmpty: 1
+            field_title:
+                xpath: div[2]/h5
                 mappingType: inner
                 valueType: plain
             field_copy:
-                xpath: div[1]/p
+                xpath: div[2]/p
                 mappingType: outer
                 valueType: html
             field_link_url:
-                xpath: div[1]/a
+                xpath: div[2]/a
                 mappingType: attrib
                 attribName: href
             field_link_text:
-                xpath: div[1]/a
+                xpath: div[2]/a
                 mappingType: inner
                 valueType: html
             field_image:

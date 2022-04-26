@@ -7,6 +7,9 @@ tvp-mapping:
         field_headline:
             dataType: flexform
             dataPath: field_headline
+        field_title:
+            dataType: flexform
+            dataPath: field_title
         field_copy:
             dataType: flexform
             dataPath: field_copy

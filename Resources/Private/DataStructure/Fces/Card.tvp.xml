@@ -16,6 +16,16 @@
                     </config>
                 </TCEforms>
             </field_headline>
+            <field_title type="array">
+                <TCEforms type="array">
+                    <label>LLL:EXT:em_tvplus_theme_demo/Resources/Private/Language/locallang_card.xlf:card.title</label>
+                    <config type="array">
+                        <type>input</type>
+                        <size>48</size>
+                        <eval>trim</eval>
+                    </config>
+                </TCEforms>
+            </field_title>
             <field_copy type="array">
                 <TCEforms type="array">
                     <label>LLL:EXT:em_tvplus_theme_demo/Resources/Private/Language/locallang_card.xlf:card.copy</label>

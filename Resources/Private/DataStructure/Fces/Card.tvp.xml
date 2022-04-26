@@ -8,7 +8,7 @@
         <el type="array">
             <field_headline type="array">
                 <TCEforms type="array">
-                    <label>field_headline</label>
+                    <label>LLL:EXT:em_tvplus_theme_demo/Resources/Private/Language/locallang_card.xlf:card.headline</label>
                     <config type="array">
                         <type>input</type>
                         <size>48</size>
@@ -18,7 +18,7 @@
             </field_headline>
             <field_copy type="array">
                 <TCEforms type="array">
-                    <label>field_copy</label>
+                    <label>LLL:EXT:em_tvplus_theme_demo/Resources/Private/Language/locallang_card.xlf:card.copy</label>
                     <config type="array">
                         <type>text</type>
                         <cols>48</cols>
@@ -32,7 +32,7 @@
             <field_link_url type="array">
                 <type>attr</type>
                 <TCEforms type="array">
-                    <label>field_link_url</label>
+                    <label>LLL:EXT:em_tvplus_theme_demo/Resources/Private/Language/locallang_card.xlf:card.link_url</label>
                     <config type="array">
                         <type>input</type>
                         <size>48</size>
@@ -56,7 +56,7 @@
             </field_link_url>
             <field_link_text type="array">
                 <TCEforms type="array">
-                    <label>field_link_text</label>
+                    <label>LLL:EXT:em_tvplus_theme_demo/Resources/Private/Language/locallang_card.xlf:card.link_text</label>
                     <config type="array">
                         <type>input</type>
                         <size>48</size>
@@ -66,7 +66,7 @@
             </field_link_text>
             <field_image type="array">
                 <TCEforms type="array">
-                    <label>field_image</label>
+                    <label>LLL:EXT:em_tvplus_theme_demo/Resources/Private/Language/locallang_card.xlf:card.image</label>
                     <config type="array">
                         <type>group</type>
                         <internal_type>db</internal_type>

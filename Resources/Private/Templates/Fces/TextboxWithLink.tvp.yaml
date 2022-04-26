@@ -26,3 +26,4 @@ tvp-template:
                 xpath: div[3]/a
                 mappingType: inner
                 valueType: html
+                removeIfEmpty: 1

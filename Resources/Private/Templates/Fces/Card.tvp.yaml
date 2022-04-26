@@ -31,6 +31,7 @@ tvp-template:
                 xpath: div[2]/a
                 mappingType: inner
                 valueType: html
+                removeIfEmpty: 1
             field_image:
                 xpath: img
                 mappingType: outer

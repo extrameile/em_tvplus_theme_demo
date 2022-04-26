@@ -9,3 +9,4 @@ It demonstrates:
 * Card as TV+ element
 * Textbox with link as TV+ element
 ![The two columns page with TYPO3 standard and TV+ content elements](https://raw.githubusercontent.com/extrameile/em_tvplus_theme_demo/master/Documentation/Screenshot_20220426_processed.png)
+![TV+ backend preview of the page](https://raw.githubusercontent.com/extrameile/em_tvplus_theme_demo/master/Documentation/Screenshot_20220426_backend.png)

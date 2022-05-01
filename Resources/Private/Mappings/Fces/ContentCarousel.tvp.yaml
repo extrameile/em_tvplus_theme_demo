@@ -1,0 +1,21 @@
+tvp-mapping:
+    meta:
+        name: LLL:EXT:em_tvplus_theme_demo/Resources/Private/Language/locallang_carousel.xlf:contentcarousel
+    combinedDataStructureIdentifier: 'EM\TVP\Theme\Demo\Fce\DataStructure:ContentCarousel.tvp.xml'
+    combinedTemplateConfigurationIdentifier: 'EM\TVP\Theme\Demo\Fce\Template:ContentCarousel.tvp.yaml'
+    mappingToTemplate:
+        field_content:
+            dataType: flexform
+            dataPath: field_content
+            valueProcessing: typoScript
+            valueProcessing.typoScript: |
+                10 = RECORDS
+                10.source.current=1
+                10.tables = tt_content
+                10.conf.tt_content =< tt_content
+                10.conf.tt_content {
+                    stdWrap.wrap = <div class="carousel-item">|</div>
+                    stdWrap.wrap.override.if.value = 1
+                    stdWrap.wrap.override.if.equals.data = cObj:parentRecordNumber
+                    stdWrap.wrap.override = <div class="carousel-item active">|</div>
+                }

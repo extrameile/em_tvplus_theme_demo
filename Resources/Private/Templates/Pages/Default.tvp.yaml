@@ -51,6 +51,10 @@ tvp-template:
                 xpath: main/section[4]
                 mappingType: outer
                 valueType: html
+            field_nothing2:
+                xpath: main/section[5]
+                mappingType: outer
+                valueType: html
             field_author:
                 xpath: footer/div/p/span
                 mappingType: inner

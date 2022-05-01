@@ -1,0 +1,20 @@
+tvp-template:
+    meta:
+        name: Bootstrap Content Carousel
+        renderer: 'TVP\Renderer\XPath'
+        template: '../Files/PageWithContent.html'
+    mapping:
+        # This is a demonstration what works and I hope it is a bit self explaining
+        # Till yet this isn't set in stone and may change in naming and working
+        # For example OUTER/INNER/ATTRIB are old names but a bit hard to understand
+        xpath: body/main/section[5]
+        mappingType: outer
+        container:
+            field_content:
+                xpath: div[1]/div[1]
+                mappingType: outer
+                valueType: html
+            field_nothing:
+                xpath: div[1]/div[2]
+                mappingType: outer
+                valueType: html

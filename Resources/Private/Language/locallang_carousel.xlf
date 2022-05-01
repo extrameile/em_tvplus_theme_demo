@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" product-name="em_tvplus_theme_demo">
+        <header/>
+        <body>
+            <trans-unit id="contentcarousel" xml:space="preserve">
+                <source>Bootstrap Content Carousel</source>
+            </trans-unit>
+            <trans-unit id="contentcarousel.content" xml:space="preserve">
+                <source>Content inside carousel</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

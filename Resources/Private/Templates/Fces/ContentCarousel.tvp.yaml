@@ -18,3 +18,15 @@ tvp-template:
                 xpath: div[1]/div[2]
                 mappingType: outer
                 valueType: html
+            carouselId:
+                xpath: .
+                mappingType: attrib
+                attribName: id
+            carouselIdPrev:
+                xpath: button[1]
+                mappingType: attrib
+                attribName: data-bs-target
+            carouselIdNext:
+                xpath: button[2]
+                mappingType: attrib
+                attribName: data-bs-target

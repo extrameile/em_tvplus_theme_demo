@@ -19,3 +19,27 @@ tvp-mapping:
                     stdWrap.wrap.override.if.equals.data = cObj:parentRecordNumber
                     stdWrap.wrap.override = <div class="carousel-item active">|</div>
                 }
+        carouselId:
+            dataType: row
+            dataPath: uid
+            valueProcessing: typoScript
+            valueProcessing.typoScript: |
+                10 = TEXT
+                10.current = 1
+                10.stdWrap.wrap = carousel-|
+        carouselIdPrev:
+            dataType: row
+            dataPath: uid
+            valueProcessing: typoScript
+            valueProcessing.typoScript: |
+                10 = TEXT
+                10.current = 1
+                10.stdWrap.wrap = #carousel-|
+        carouselIdNext:
+            dataType: row
+            dataPath: uid
+            valueProcessing: typoScript
+            valueProcessing.typoScript: |
+                10 = TEXT
+                10.current = 1
+                10.stdWrap.wrap = #carousel-|

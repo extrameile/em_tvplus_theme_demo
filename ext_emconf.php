@@ -10,6 +10,7 @@ $EM_CONF[$_EXTKEY] = [
     'clearcacheonload' => 1,
     'constraints' => [
         'depends' => [
+            'typo3' => '8.7.0-11.5.99',
             'templavoilaplus' => '8.0.3',
         ],
     ],

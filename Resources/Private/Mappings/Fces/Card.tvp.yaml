@@ -2,7 +2,7 @@ tvp-mapping:
     meta:
         name: Bootstrap Card
     combinedDataStructureIdentifier: 'EM\TVP\Theme\Demo\Fce\DataStructure:Card.tvp.xml'
-    combinedTemplateConfigurationIdentifier: 'EM\TVP\Theme\Demo\Fce\Template:Card.tvp.yaml'
+    combinedTemplateConfigurationIdentifier: 'EM\TVP\Theme\Demo\Fce\Template:CardImageTop.tvp.yaml'
     mappingToTemplate:
         field_headline:
             dataType: flexform
@@ -40,3 +40,26 @@ tvp-mapping:
         field_footer:
             dataType: flexform
             dataPath: field_footer
+    childTemplate: # Here we define a childTemplate which depends on TS config or a child selector field
+        bottom:
+            meta:
+                name: Bootstrap Card (bottom version)
+            combinedTemplateConfigurationIdentifier: 'EM\TVP\Theme\Demo\Fce\Template:CardImageBottom.tvp.yaml' # Overwrite template configuration identifier
+            #mappingToTemplate: #Overwrite field configuration
+            #    dataType: flexform
+            #    dataPath: somewhere
+    childSelector: # A field that resolves to a string which includes the childTemplate name ... multiple childSelectors are possible, configuration overwriting will be done in order of the selectors.
+        field_layout:
+            dataType: row
+            dataPath: layout
+            valueProcessing: typoScript
+            valueProcessing.typoScript: |
+                10 = CASE
+                10 {
+                    key.current = 1
+                    default = TEXT
+                    default.value =
+
+                    1 = TEXT
+                    1.value = bottom
+                }

@@ -7,7 +7,7 @@ tvp-template:
         # This is a demonstration what works and I hope it is a bit self explaining
         # Till yet this isn't set in stone and may change in naming and working
         # For example OUTER/INNER/ATTRIB are old names but a bit hard to understand
-        xpath: body/main/section[5]
+        xpath: body/main/section[6]
         mappingType: outer
         container:
             field_content:
